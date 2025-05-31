@@ -35,6 +35,10 @@ class Stack{
             return top == capacity-1;
         }
         void print(){
+            if(isEmpty()) {
+                cout << "underFlow!"<<endl;
+                return;
+            }
             int i = top;
             while(true){
                 cout << list[i--] << "->" ;
@@ -42,6 +46,10 @@ class Stack{
                 if(i == -1) break;
             }
             cout<<"null" <<endl;
+        }
+        void clear(){
+            cout << "clear!"<<endl;
+            top = -1;
         }
 };
 
@@ -62,6 +70,9 @@ int main(){
     s.push(13);
     s.push(14);
 
+    s.print();
+
+    s.clear();
     s.print();
 
     return 0;
