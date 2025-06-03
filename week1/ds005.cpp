@@ -2,7 +2,7 @@
 #include <string>
 
 using namespace std;
-
+// 한 번 더
 void count(string s){
     int alphaCount[26] = {0};
     int blankCount = 0;
