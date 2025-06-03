@@ -2,24 +2,18 @@
 using namespace std;
 
 int main(){
-    int choice;
-    bool digit = true;
-while(true){
-    cin >> choice;
-    switch(choice){
-        case 1 : {
-            cout << "hello";
+        string say;
+    do{
+        cout << "환영한다~" <<endl;;
+        cout << " 너는 거짓말을 한적이 있나? ";
+        cin >> say;
+        if(say == "yes") cout << "지옥행";
+        if(say == "no"){
+            cout << "pass~"<<endl;
             break;
         }
-
-        case 2 :{
-            
-        cout << "world";
-        break;
-            
-    }
-}
-if(choice != 1 && choice !=2) break;
-}
+    }while(true);
+    
     return 0;
+
 }
