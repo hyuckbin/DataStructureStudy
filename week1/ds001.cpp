@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+
 int main(){
     int height , weight ;
     double bmi; 
