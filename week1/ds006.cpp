@@ -2,7 +2,7 @@
 #include <iomanip>
 
 using namespace std;
-
+//한 번 더
 const int SIZE = 3;
 struct data{
     string title[SIZE] ;
