@@ -36,8 +36,8 @@ class Date {
             year_++;
             tempMonth=1;
         }
-        inc = inc -(31 - temp);
-        day_ = inc;
+        day_ +=inc;
+        day_ -= 31;
         month_ = tempMonth;
     }
     else day_ += inc;
@@ -74,8 +74,8 @@ class Date {
         d.AddMonth(15);
         d.ShowDate();
 
-        cout <<" add + 20 day" <<endl;
-        d.AddDay(20);
+        cout <<" add + 50 day" <<endl;
+        d.AddDay(50);
         d.ShowDate();
 
         return 0;
